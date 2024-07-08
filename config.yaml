@@ -4,7 +4,7 @@ cache: true
 include_single_select: false
 minifyHtml: true
 optimizeImages: true
-url_slug: 'UniversityBuildingQuiz'
+url_slug: '/UniversityBuildingQuiz'
 imageSource: "LOCAL" # LOCAL | EMBED | SOURCE
 scssConfig:
   style: "compressed" # compressed | expanded
