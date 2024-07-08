@@ -1,4 +1,4 @@
-host: true
+host: false
 debug: false
 cache: true
 include_single_select: false
@@ -132,7 +132,7 @@ schools:
     error_graceful: true
     max_level_size: 10
     processor: "CLASS_FIND"
-    enabled: false
+    enabled: true
     building_map: []
     game_modes:
       - "BUILDING"
@@ -141,7 +141,7 @@ schools:
     error_graceful: true
     max_level_size: 10
     processor: "CLASS_FIND"
-    enabled: false
+    enabled: true
     building_map: []
     game_modes:
       - "BUILDING"
@@ -150,7 +150,7 @@ schools:
     error_graceful: true
     max_level_size: 10
     processor: "CLASS_FIND"
-    enabled: false
+    enabled: true
     building_map: []
     game_modes:
       - "BUILDING"
@@ -159,7 +159,7 @@ schools:
     error_graceful: true
     max_level_size: 10
     processor: "CLASS_FIND"
-    enabled: false
+    enabled: true
     building_map: []
     game_modes:
       - "BUILDING"
