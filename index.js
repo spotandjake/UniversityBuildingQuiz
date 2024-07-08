@@ -302,7 +302,7 @@ const generate_game = async (config) => {
   const selection_screen_link =
     config.include_single_select || data.length > 1
       ? undefined
-      : `schools/${data[0].school_name}`;
+      : `./schools/${data[0].school_name}`;
   if (selection_screen_link == undefined) {
     // Generate Page
     const selections = [];
