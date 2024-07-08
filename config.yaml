@@ -1,9 +1,10 @@
-host: false
+host: true
 debug: false
 cache: true
 include_single_select: false
 minifyHtml: true
 optimizeImages: true
+url_slug: 'UniversityBuildingQuiz'
 imageSource: "LOCAL" # LOCAL | EMBED | SOURCE
 scssConfig:
   style: "compressed" # compressed | expanded
@@ -131,7 +132,7 @@ schools:
     error_graceful: true
     max_level_size: 10
     processor: "CLASS_FIND"
-    enabled: true
+    enabled: false
     building_map: []
     game_modes:
       - "BUILDING"
@@ -140,7 +141,7 @@ schools:
     error_graceful: true
     max_level_size: 10
     processor: "CLASS_FIND"
-    enabled: true
+    enabled: false
     building_map: []
     game_modes:
       - "BUILDING"
@@ -149,7 +150,7 @@ schools:
     error_graceful: true
     max_level_size: 10
     processor: "CLASS_FIND"
-    enabled: true
+    enabled: false
     building_map: []
     game_modes:
       - "BUILDING"
@@ -158,7 +159,7 @@ schools:
     error_graceful: true
     max_level_size: 10
     processor: "CLASS_FIND"
-    enabled: true
+    enabled: false
     building_map: []
     game_modes:
       - "BUILDING"

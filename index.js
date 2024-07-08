@@ -38,7 +38,7 @@ const processImage = async (config, url, path, pathBase) => {
       } else {
         // Write to file
         await fs.promises.writeFile(`${pathBase}${path}`, image);
-        return path;
+        return `${config.url_slug}${path}`;
       }
     case "SOURCE":
       return url;
@@ -312,7 +312,7 @@ const generate_game = async (config) => {
         selection_location: `schools/${school.school_name}/`,
       });
     }
-    const schoolSelection = processHTML(config, selectionTemplate({ screen_name: 'School', selections }));
+    const schoolSelection = processHTML(config, selectionTemplate({ screen_name: 'School', selections, url_slug: config.url_slug }));
     // Write HTML
     await fs.promises.writeFile("./dist/schoolSelect.html", schoolSelection);
   } else if (fs.existsSync("./dist/schoolSelect.html")) {
@@ -346,7 +346,7 @@ const generate_game = async (config) => {
           selection_location: `${multipleSelectionScreens ? '' : `${game_mode}`}/level${levelIndex}.html`,
         });
       }
-      const levelSelection = processHTML(config, selectionTemplate({ screen_name: 'Level', selections }));
+      const levelSelection = processHTML(config, selectionTemplate({ screen_name: 'Level', selections, url_slug: config.url_slug }));
       if (multipleSelectionScreens) {
         // Write to game_mode root
         await fs.promises.writeFile(
@@ -396,6 +396,7 @@ const generate_game = async (config) => {
           building_list: game_data.building_list,
           level_data: roundData,
           get_building_buttons: get_building_buttons,
+          url_slug: config.url_slug
         }));
         // Write Level to file
         await fs.promises.writeFile(`./dist/schools/${school.school_name}/${game_mode}/level${i + 1}.html`, renderedLevel);
@@ -411,7 +412,7 @@ const generate_game = async (config) => {
           selection_location: `/${game_mode}/`,
         });
       }
-      const gameSelection = processHTML(config, selectionTemplate({ screen_name: 'Game Mode', selections }));
+      const gameSelection = processHTML(config, selectionTemplate({ screen_name: 'Game Mode', selections, url_slug: config.url_slug }));
       // Write HTML
       await fs.promises.writeFile(
         `./dist/schools/${school.school_name}/index.html`,
