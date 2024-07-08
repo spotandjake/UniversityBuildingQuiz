@@ -2,10 +2,10 @@
 Trent Guesser is a game inspired by geoguesser the goal is to correctly guess the building the given image is from, Despite being called Trent Guesser we actually support 7 schools, and if we found resources containg the images and building data for more schools we could quite easily add support for more :) (Feel free to make an issue or pr).
 
 ## Files
-- `./dist/` - The output generated application
-- `templates` - The html and scss file used to generate the copy
-- `./index.js` - The node.js based preprocessor used to turn our data and config into a game
-- `./config.yaml` - The yaml config used to configure and drive the game generation
+* `./dist/` - The output generated application
+* `templates` - The html and scss file used to generate the copy
+* `./index.js` - The node.js based preprocessor used to turn our data and config into a game
+* `./config.yaml` - The yaml config used to configure and drive the game generation
 
 ## Challange
 
