@@ -1,0 +1,605 @@
+[
+  {
+    "label": "BL 102",
+    "category": "Bata Library",
+    "buildingimg": "BL.jpg",
+    "roomimg": "bata102.jpg"
+  },
+  {
+    "label": "BL 103",
+    "category": "Bata Library",
+    "buildingimg": "BL.jpg",
+    "roomimg": "bata103.jpg"
+  },
+  {
+    "label": "BL 107.1",
+    "category": "Bata Library",
+    "buildingimg": "BL.jpg",
+    "roomimg": "bata107.1.jpg"
+  },
+  {
+    "label": "BL 107.2",
+    "category": "Bata Library",
+    "buildingimg": "BL.jpg",
+    "roomimg": "bata107.2.jpg"
+  },
+  {
+    "label": "BL 201",
+    "category": "Bata Library",
+    "buildingimg": "BL.jpg",
+    "roomimg": "bata201.jpg"
+  },
+  {
+    "label": "BL 210",
+    "category": "Bata Library",
+    "buildingimg": "BL.jpg",
+    "roomimg": "bata210.jpg"
+  },
+  {
+    "label": "BL 314",
+    "category": "Bata Library",
+    "buildingimg": "BL.jpg",
+    "roomimg": "bata314.jpg"
+  },
+  {
+    "label": "BL 401",
+    "category": "Bata Library",
+    "buildingimg": "BL.jpg",
+    "roomimg": "bata401.jpg"
+  },
+  {
+    "label": "BL 402",
+    "category": "Bata Library",
+    "buildingimg": "BL.jpg",
+    "roomimg": "bata402.jpg"
+  },
+  {
+    "label": "B!ke",
+    "linkurl": "/trent/bike",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "bike5.jpg"
+  },
+  {
+    "label": "CCN G4",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "CCNG4.jpg"
+  },
+  {
+    "label": "CCN I1",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "CCNI1.jpg"
+  },
+  {
+    "label": "CCN I2",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "CCNI2.jpg"
+  },
+  {
+    "label": "CCN K1",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "CCNK1.jpg"
+  },
+  {
+    "label": "CCN M2",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "CCNM2.jpg"
+  },
+  {
+    "label": "CCS 307",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "CCS307.jpg"
+  },
+  {
+    "label": "CCW A1",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "CCWA1.jpg"
+  },
+  {
+    "label": "CCW A2",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "CCWA2.jpg"
+  },
+  {
+    "label": "CCW C3",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "CCWC3.jpg"
+  },
+  {
+    "label": "Seasoned Spoon",
+    "linkurl": "/trent/seasonedspoon",
+    "category": "Champlain College",
+    "buildingimg": "CC.jpg",
+    "roomimg": "seasonedspoon4.jpg"
+  },
+  {
+    "label": "CSB D101",
+    "category": "Chemical Science",
+    "buildingimg": "CSB.jpg",
+    "roomimg": "CSBD101.jpg"
+  },
+  {
+    "label": "CSB D109",
+    "category": "Chemical Science",
+    "buildingimg": "CSB.jpg",
+    "roomimg": "CSBD109.jpg"
+  },
+  {
+    "label": "CSB D113",
+    "category": "Chemical Science",
+    "buildingimg": "CSB.jpg",
+    "roomimg": "CSBD113.jpg"
+  },
+  {
+    "label": "CSB D116",
+    "category": "Chemical Science",
+    "buildingimg": "CSB.jpg",
+    "roomimg": "CSBD116.jpg"
+  },
+  {
+    "label": "CSB E101",
+    "category": "Chemical Science",
+    "buildingimg": "CSB.jpg",
+    "roomimg": "CSBE101.jpg"
+  },
+  {
+    "label": "CSB E103",
+    "category": "Chemical Science",
+    "buildingimg": "CSB.jpg",
+    "roomimg": "CSBE103.jpg"
+  },
+  {
+    "label": "DNA B110.1",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAB110.1.jpg"
+  },
+  {
+    "label": "DNA B110.2",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAB110.2.jpg"
+  },
+  {
+    "label": "DNA B104",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAB104.jpg"
+  },
+  {
+    "label": "DNA B105",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAB105.jpg"
+  },
+  {
+    "label": "DNA B113",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAB113.jpg"
+  },
+  {
+    "label": "DNA C141",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAC141.jpg"
+  },
+  {
+    "label": "DNA C142",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAC142.jpg"
+  },
+  {
+    "label": "DNA C215",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAC215.jpg"
+  },
+  {
+    "label": "DNA C231",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAC231.jpg"
+  },
+  {
+    "label": "DNA C233",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAC233.jpg"
+  },
+  {
+    "label": "DNA D103",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAD103.jpg"
+  },
+  {
+    "label": "DNA D105",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAD105.jpg"
+  },
+  {
+    "label": "DNA D106",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAD106.jpg"
+  },
+  {
+    "label": "DNA D108",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAD108.jpg"
+  },
+  {
+    "label": "DNA D202",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAD202.jpg"
+  },
+  {
+    "label": "DNA D208",
+    "category": "DNA Building",
+    "buildingimg": "DNA.jpg",
+    "roomimg": "DNAD208.jpg"
+  },
+  {
+    "label": "ECC 201",
+    "category": "Lady Eaton College",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ECC201.jpg"
+  },
+  {
+    "label": "ECC 207",
+    "category": "Lady Eaton College",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ECC207.jpg"
+  },
+  {
+    "label": "ECC 208",
+    "category": "Lady Eaton College",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ECC208.jpg"
+  },
+  {
+    "label": "ECC 212",
+    "category": "Lady Eaton College",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ECC212.jpg"
+  },
+  {
+    "label": "ESC A202",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ESCA202.jpg"
+  },
+  {
+    "label": "ESC A205",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ESCA205.jpg"
+  },
+  {
+    "label": "ESC A209",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ESCA209.jpg"
+  },
+  {
+    "label": "ESC B203",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ESCB203.jpg"
+  },
+  {
+    "label": "ESC B305",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ESCB305.jpg"
+  },
+  {
+    "label": "ESC B305.1",
+    "linkurl": "/trent/rooftopgardens",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "enviroscience30.jpg"
+  },
+  {
+    "label": "ESC B319",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ESCB319.jpg"
+  },
+  {
+    "label": "ESC C111.3",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ESCC111.3.jpg"
+  },
+  {
+    "label": "ESC C202",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ESCC202.jpg"
+  },
+  {
+    "label": "ESC C205",
+    "category": "Environmental Science Center",
+    "buildingimg": "ECC.jpg",
+    "roomimg": "ESCC205.jpg"
+  },
+  {
+    "label": "FPHL 101",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "FPHL101.jpg"
+  },
+  {
+    "label": "FPHL 117",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "FPHL117.jpg"
+  },
+  {
+    "label": "GCS 103",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS103-2.jpg"
+  },
+  {
+    "label": "GCS 105",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS105-3.jpg"
+  },
+  {
+    "label": "GCS 106",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS106-3.jpg"
+  },
+  {
+    "label": "GCS 108",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS108-3.jpg"
+  },
+  {
+    "label": "GCS 110",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS110-2.jpg"
+  },
+  {
+    "label": "GCS 111",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS111-2.jpg"
+  },
+  {
+    "label": "GCS 112",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS112-2.jpg"
+  },
+  {
+    "label": "GCS 114",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS114.jpg"
+  },
+  {
+    "label": "GCS 115",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS115-2.jpg"
+  },
+  {
+    "label": "GCS 345",
+    "category": "Gzowski College",
+    "buildingimg": "GCS.jpg",
+    "roomimg": "GCS345.jpg"
+  },
+  {
+    "label": "OCA W101.2",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCAW101.2.jpg"
+  },
+  {
+    "label": "OCA 109",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA109.jpg"
+  },
+  {
+    "label": "OCA 128",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA128.jpg"
+  },
+  {
+    "label": "OCA 134",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA134.jpg"
+  },
+  {
+    "label": "OCA 143",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA143.jpg"
+  },
+  {
+    "label": "OCA 171",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA171.jpg"
+  },
+  {
+    "label": "OCA 203",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA203.jpg"
+  },
+  {
+    "label": "OCA 204",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA204.jpg"
+  },
+  {
+    "label": "OCA 205",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA205.jpg"
+  },
+  {
+    "label": "OCA 206",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA206.jpg"
+  },
+  {
+    "label": "OCA 207",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA207.jpg"
+  },
+  {
+    "label": "OCA 208",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA208.jpg"
+  },
+  {
+    "label": "OCA 219",
+    "category": "Otonabee College",
+    "buildingimg": "OCA.jpg",
+    "roomimg": "OCA219.jpg"
+  },
+  {
+    "label": "SC 103",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SC103-2.jpg"
+  },
+  {
+    "label": "SC 115",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SC115.jpg"
+  },
+  {
+    "label": "SC 128",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SC128.jpg"
+  },
+  {
+    "label": "SC 137",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SC137-2.jpg"
+  },
+  {
+    "label": "SC 203",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SC203.jpg"
+  },
+  {
+    "label": "SC 208",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SC208.jpg"
+  },
+  {
+    "label": "SC 215",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SC215.jpg"
+  },
+  {
+    "label": "SC 305",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SC305.jpg"
+  },
+  {
+    "label": "SC 317",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SC317.jpg"
+  },
+  {
+    "label": "SC W1",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SCW1W2.jpg"
+  },
+  {
+    "label": "SC W2",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SCW1W2.jpg"
+  },
+  {
+    "label": "SC W3",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SCW3W4.jpg"
+  },
+  {
+    "label": "SC W4",
+    "category": "Science Complex",
+    "buildingimg": "SC.jpg",
+    "roomimg": "SCW3W4.jpg"
+  },
+  {
+    "label": "CH 102",
+    "category": "Crawford House",
+    "buildingimg": "CH.jpg",
+    "roomimg": "CH102.jpg"
+  },
+  {
+    "label": "SH 102.1",
+    "category": "Scott House",
+    "buildingimg": "SH.jpg",
+    "roomimg": "SC.jpg"
+  },
+  {
+    "label": "SH 105",
+    "category": "Scott House",
+    "buildingimg": "SH.jpg",
+    "roomimg": "SC.jpg"
+  },
+  {
+    "label": "TC 101",
+    "category": "Bagnani Hall",
+    "buildingimg": "TC.jpg",
+    "roomimg": "TC101.jpg"
+  },
+  {
+    "label": "WH 102",
+    "category": "Wallis Hall",
+    "buildingimg": "WH.jpg",
+    "roomimg": "WH.jpg"
+  },
+  {
+    "label": "WH 128",
+    "category": "Wallis Hall",
+    "buildingimg": "WH.jpg",
+    "roomimg": "WH.jpg"
+  }
+]

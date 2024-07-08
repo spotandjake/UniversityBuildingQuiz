@@ -1,0 +1,187 @@
+@use 'sass:math';
+@import "config:settings";
+
+// Dynamic Tags Info
+// Visible Radio Buttons: #LvlVis$i
+// Correct Radio Buttons: #LvlT$i
+// InCorrect Radio Buttons: #LvlF$i
+// Progress Bar Items: #lvlInd$i
+// Level Items: .lvlS$i
+// Debug
+@if ($debug_hidden) {
+  .debug_hidden {
+    display: none;
+  }
+}
+// Game Style
+main {
+  display: grid; // For now I think flex is what I want in the end
+  grid-template-rows: max-content 1fr max-content;
+  height: 100%;
+  overflow: hidden; // TODO: Remove this as it is debug
+}
+fieldset {
+  padding: 0;
+  border: none;
+}
+.levelContent {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas: 'btn img';
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.levelHeading {
+  header:has(#LvlVis#{$roundCount + 1}:checked) .levelHeading {
+    display: none;
+  }
+}
+.levelImages {
+  min-height: 100%;
+  min-width: 100%;
+  grid-area: img;
+  & > img {
+    margin: auto;
+    display: none;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 1rem;
+  }
+}
+.levelButtons {
+  min-height: 100%;
+  min-width: 100%;
+  div { height: 100%; }
+  .button {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  & > div {
+    display: none;
+    & > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 1fr;
+      grid-gap: 1rem;
+    }
+  }
+}
+.levelFinished {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: var(--color-bg-primary);
+  & > div {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: var(--color-bg-secondary);
+  }
+  label.button { background-color: var(--color-fg-btn-pass); }
+  .button {
+    display: none;
+    margin: auto auto 0 auto;
+    padding: 1rem 5rem;
+  }
+  h2 { text-align: center; }
+}
+.progressBar {
+  display: flex;
+  gap: .75rem;
+  max-width: max-content;
+  justify-content: center;
+  margin: .5rem auto;
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: var(--color-bg-secondary);
+  div {
+    height: 1rem;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+
+    background-color: var(--color-fg-primary);
+  }
+}
+
+.scoreOutcome:after { content: 'You Guessed Correctly'; }
+.scoreLog:after {
+  content: ' 0';
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .desktopBtn {
+    display: none !important;
+  }
+  .levelContent {
+    display: grid;
+    grid-templates-row: 1fr 1fr;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+      'img'
+      'btn'
+    ;
+  }
+}
+
+// State Generation Macro
+@function repeat($character, $seperator, $n){
+  $c:"";
+  @for $i from 1 through $n {
+    $c: $c + $character;
+    @if $i != $n {
+      $c: $c + $seperator;
+    }
+  }
+  @return $c;
+}
+// State Logic
+@for $i from 0 through $roundCount {
+  // Score Value
+  header:has(#LvlVis#{$i}:checked) ~ main #lvlTxt:before {
+    content: "#{math.min($i + 1, $roundCount) }";
+  }
+  // Level Display Logic
+  header:has(#LvlVis#{$i}:checked) ~ main .lvlS#{$i} {
+    display: block;
+  }
+  // Progress Bar Indicator Logic
+  header:has(#LvlVis#{$i}:checked) ~ main #lvlInd#{$i} {
+    background-color: var(--color-fg-active);
+  }
+  // Round Finished Logic
+  header:has(#LvlVis#{$i}:checked):has([name="LvlS#{$i}"]:checked) ~ main .levelFinished {
+    display: block;
+  }
+  // False Colors Finish Logic
+  header:has(#LvlVis#{$i}:checked):has(#LvlF#{$i}:checked) ~ main .levelFinished .button {
+    background-color: var(--color-fg-btn-fail);
+  }
+  // Score
+  header:has(#{repeat(".lvlC:checked", " ~ ", $i)}) ~ main .scoreLog:after {
+    content: ' #{$i}';
+  }
+  // ScoreOutCome
+  header:has(#LvlVis#{$i}:checked):has(#LvlF#{$i}:checked) ~ main .scoreOutcome:after {
+    content: 'You Guessed Incorrectly';
+  }
+}
+// End Screen State
+header:has(#LvlVis#{$roundCount}:checked) h1:after {
+  content: " Complete";
+}
+header:has(#LvlVis#{$roundCount}:checked) ~ main .scoreOutcome:after {
+  content: "Congrats You Completed The Level";
+}

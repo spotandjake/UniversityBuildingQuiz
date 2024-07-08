@@ -1,0 +1,130 @@
+<!-- 
+  ejs values:
+
+  game_mode: GAMEMODE,
+  level: number,
+  school_name: string,
+  finish_url: string,
+  building_map: { [key: string]: string[] }
+  building_list: Array<string> | undefined,
+  level_data: Array<{entry_label: string, entry_category: string, entry_image: string>
+  get_building_buttons: (current_building: string, building_map: [ [key: string]: string[] ], building_list: string[]) => set<string>
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Location Guesser</title>
+    <link rel="stylesheet" href="/styles/theme.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="level<%- level -%>.css">
+
+    <link rel="icon" type="image/svg+xml" href="/resources/icon.svg">
+  </head>
+  <body>
+    <!-- KARA: This can be used on the levels page -->
+    <header>
+      <!-- Game State -->
+      <div class="debug_hidden">
+        <!-- Visible -->
+        <fieldset>
+          <span>Visible: </span>
+          <% level_data.forEach((_, i) => { %>
+            <input type="radio" id="LvlVis<%- i -%>" name="LvlState" <%- i == 0 ? 'checked' : '' -%> />
+          <% }); %>
+            <input type="radio" id="LvlVis<%- level_data.length -%>" name="LvlState" />
+        </fieldset>
+        <!-- Correct, Incorrect -->
+        <fieldset>
+          <span>Correct: </span>
+          <% level_data.forEach((_, i) => { %>
+            <input type="radio" class="lvlC" id="LvlT<%- i -%>" name="LvlS<%- i -%>" />
+          <% }); %>
+          <br>
+          <span>Incorrect: </span>
+          <% level_data.forEach((_, i) => { %>
+            <input type="radio" id="LvlF<%- i -%>" name="LvlS<%- i -%>" />
+          <% }); %>
+        </fieldset>
+      </div>
+      <!-- Content -->
+      <div class="headerContent">
+        <a href="/schoolSelect.html" class="circle">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">
+            <path d="m313-440 196 196q12 12 11.5 28T508-188q-12 11-28 11.5T452-188L188-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l264-264q11-11 27.5-11t28.5 11q12 12 12 28.5T508-715L313-520h447q17 0 28.5 11.5T800-480q0 17-11.5 28.5T760-440H313Z"/>
+          </svg>
+        </a>
+        <h1>Level <%- level -%></h1>
+        <span></span>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="currentColor" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,186.7C384,149,480,107,576,122.7C672,139,768,213,864,234.7C960,256,1056,224,1152,224C1248,224,1344,256,1392,272L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Text -->
+      <div class="levelHeading">
+        <p id="lvlTxt" class="accent">/<%- level_data.length -%></p>
+        <h2>Which Building Is This?</h2>
+      </div>
+      <!-- Horizontal Row Or Vertical Row -->
+      <div class="levelContent">
+        <!-- Image -->
+        <div class="levelImages levelItem">
+          <% level_data.forEach(({ entry_image }, i) => { %>
+            <% if (i == 0) { %>
+              <img class="lvlS<%- i -%>" src="<%= entry_image -%>" loading="eager" fetchpriority="high">
+            <% } else { %>
+              <img class="lvlS<%- i -%>" src="<%= entry_image -%>">
+            <% } %>
+          <% }); %>
+        </div>
+        <!-- Buttons -->
+        <div class="levelButtons levelItem">
+          <!-- Game Mode dependent -->
+          <% if (game_mode == "BUILDING" && building_list != undefined) { %>
+            <% level_data.forEach(({ entry_category }, i) => { %>
+              <div class="lvlS<%- i -%>">
+                <div>
+                  <% const mobile_buttons = get_building_buttons(entry_category, building_map, building_list); %>
+                  <% building_list.forEach((building) => { %>
+                    <label
+                      class="button<%- mobile_buttons.has(building) ? '' : ' desktopBtn' -%>"
+                      for="<%- building == entry_category ? `LvlT${i}` : `LvlF${i}` -%>"
+                    >
+                      <%- building -%>
+                    </label>
+                  <% }); %>
+                </div>
+              </div>
+            <% }); %>
+          <% } else { %>
+            <% throw new Error("Unknown Game Mode In Game Or Missing Data"); %>
+          <% } %>
+        </div>
+        <!-- Next Level -->
+        <div class="levelFinished lvlS<%- level_data.length -%>">
+          <div>
+            <h2 class="scoreOutcome"></h2>
+            <p class="scoreLog">Your current score is:</p>
+            <% level_data.forEach((_, i) => { %>
+              <label class="lvlS<%- i -%> button" for="LvlVis<%- i + 1 -%>">
+                Next Level
+              </label>
+            <% }); %>
+            <a class="lvlS<%- level_data.length -%> button" href="<%- finish_url -%>">
+              Go Back Home
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Progress Bar -->
+      <div class="progressBar">
+        <% level_data.forEach((_, i) => { %>
+          <div id="lvlInd<%- i -%>"></div>
+        <% }); %>
+      </div>
+    </main>
+  </body>
+</html>

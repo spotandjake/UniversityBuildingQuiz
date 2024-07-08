@@ -1,0 +1,25 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "htmlfy": "^0.2.1",
+    "is-ci": "^3.0.1",
+    "sass": "^1.77.6",
+    "sharp": "^0.33.4",
+    "wasm-image-optimization": "^1.0.1",
+    "yaml": "^2.4.5"
+  }
+}

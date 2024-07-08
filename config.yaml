@@ -1,0 +1,164 @@
+host: false
+debug: false
+cache: true
+include_single_select: false
+minifyHtml: true
+optimizeImages: true
+imageSource: "LOCAL" # LOCAL | EMBED | SOURCE
+scssConfig:
+  style: "compressed" # compressed | expanded
+schools:
+  - name: "Trent"
+    data: "./data/trent_data.json"
+    error_graceful: true
+    max_level_size: 10
+    processor: "CLASS_FIND"
+    enabled: true
+    building_map:
+      - name: "Bata Library"
+        similar_buildings:
+          - "Lady Eaton College"
+          - "Champlain College"
+          - "Chemical Science"
+          - "Otonabee College"
+          - "Environmental Science Center"
+      - name: "Champlain College"
+        similar_buildings:
+          - "Bata Library"
+          - "Lady Eaton College"
+          - "Chemical Science"
+          - "Otonabee College"
+          - "Environmental Science Center"
+      - name: "Chemical Science"
+        similar_buildings:
+          - "DNA Building"
+          - "Bata Library"
+          - "Environmental Science Center"
+          - "Gzowski College"
+          - "Science Complex"
+      - name: "DNA Building"
+        similar_buildings:
+          - "Bata Library"
+          - "Environmental Science Center"
+          - "Gzowski College"
+          - "Otonabee College"
+          - "Science Complex"
+      - name: "Lady Eaton College"
+        similar_buildings:
+          - "Bata Library"
+          - "Champlain College"
+          - "Chemical Science"
+          - "Otonabee College"
+          - "Scott House"
+      - name: "Environmental Science Center"
+        similar_buildings:
+          - "DNA Building"
+          - "Bata Library"
+          - "Gzowski College"
+          - "Otonabee College"
+          - "Science Complex"
+      - name: "Gzowski College"
+        similar_buildings:
+          - "DNA Building"
+          - "Bata Library"
+          - "Environmental Science Center"
+          - "Otonabee College"
+          - "Science Complex"
+      - name: "Otonabee College"
+        similar_buildings:
+          - "DNA Building"
+          - "Bata Library"
+          - "Environmental Science Center"
+          - "Gzowski College"
+          - "Science Complex"
+      - name: "Science Complex"
+        similar_buildings:
+          - "DNA Building"
+          - "Bata Library"
+          - "Environmental Science Center"
+          - "Gzowski College"
+          - "Otonabee College"
+      - name: "Crawford House"
+        similar_buildings:
+          - "Scott House"
+          - "Bagnani Hall"
+          - "Wallis Hall"
+          - "Otonabee College"
+          - "Chemical Science"
+      - name: "Scott House"
+        similar_buildings:
+          - "Bagnani Hall"
+          - "Wallis Hall"
+          - "Crawford House"
+          - "Otonabee College"
+          - "Chemical Science"
+      - name: "Bagnani Hall"
+        similar_buildings:
+          - "Scott House"
+          - "Wallis Hall"
+          - "Crawford House"
+          - "Otonabee College"
+          - "Chemical Science"
+      - name: "Wallis Hall"
+        similar_buildings:
+          - "Scott House"
+          - "Bagnani Hall"
+          - "Crawford House"
+          - "Otonabee College"
+          - "Chemical Science"
+    game_modes:
+      - "BUILDING"
+  - name: "Carleton"
+    data: "./data/carleton_data.json"
+    error_graceful: true
+    max_level_size: 10
+    processor: "CLASS_FIND"
+    enabled: true
+    building_map: []
+    game_modes:
+      - "BUILDING"
+  - name: "Queens"
+    data: "./data/queens_data.json"
+    error_graceful: true
+    max_level_size: 10
+    processor: "CLASS_FIND"
+    enabled: true
+    building_map: []
+    game_modes:
+      - "BUILDING"
+  - name: "Western"
+    data: "./data/western_data.json"
+    error_graceful: true
+    max_level_size: 10
+    processor: "CLASS_FIND"
+    enabled: true
+    building_map: []
+    game_modes:
+      - "BUILDING"
+  - name: "Ottawa"
+    data: "./data/ottawa_data.json"
+    error_graceful: true
+    max_level_size: 10
+    processor: "CLASS_FIND"
+    enabled: true
+    building_map: []
+    game_modes:
+      - "BUILDING"
+  - name: "Guelph"
+    data: "./data/guelph_data.json"
+    error_graceful: true
+    max_level_size: 10
+    processor: "CLASS_FIND"
+    enabled: true
+    building_map: []
+    game_modes:
+      - "BUILDING"
+  - name: "Toronto"
+    data: "./data/toronto_data.json"
+    error_graceful: true
+    max_level_size: 10
+    processor: "CLASS_FIND"
+    enabled: true
+    building_map: []
+    game_modes:
+      - "BUILDING"
